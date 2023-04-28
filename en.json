@@ -1,0 +1,121 @@
+{
+	"language_name": "English",
+	"fail_color": [255, 0, 0],
+	"success_color": [0, 255, 0],
+	"neutral_color": [59, 136, 195],
+	"no_dm": "> This command can not be **ran** in **__DM__**!",
+	"no_permission": "> You don't have **__permission__** to run this **command**!",
+
+	"whitelist_success_dm": {
+		"whitelist_report": {
+			"title": "**You Passed!**\n\n",
+			"message": "\n> We are **glad** to tell you that you got **accepted**!\n\n> **Your score**: `{correct_answers}`/`{questions_amount}`\n"
+		},
+
+		"final_message": {
+			"title": "**You're done**\n\n",
+			"message": "Congratulations, you passed the **whitelist**!\n\n> The **role** on **Discord** has been added to you and you can now **join** the **server**!"
+		}
+	},
+
+	"whitelist_failure_dm": {
+		"title": "**You Failed**\n\n",
+		"message": "\n> We are **sorry** to inform you that you got **__rejected__**!\n> **Your score**: `{correct_answers}`/`{questions_amount}`\n\n> Don't **give up**! Study the **__regulations__** and try again!.\n"
+	},
+
+	"log_channel_message": {
+		"success": {
+			"title": "**New Player!**\n\n",
+			"message": "\n<@{user_id}> has been **whitelisted**!\n\n> **Score**: `{correct_answers}`/`{questions_amount}`\n> **ID**: {user_id}\n\n> **Date**: <t:{date_unix}:R>\n\n> **Backstory**: {backstory}"
+		},
+
+		"fail": {
+			"title": "**Whitelist Failure!**\n\n",
+			"message": "\n<@{user_id}> has failed the **whitelist**!\n\n> **Score**: {correct_answers}/{questions_amount}\n> **ID**: {user_id}\n\n> **Date**: <t:{date_unix}:R>"
+		}
+	},
+
+	"admin_log_channel_message": {
+		"success": {
+			"title": "**New Player!**\n\n",
+			"message": "\n<@{user_id}> has been **whitelisted**!\n\n> **Score**: `{correct_answers}`/`{questions_amount}`\n> **ID**: {user_id}\n\n> **Date**: <t:{date_unix}:R>\n\n> **Backstory**: {backstory}"
+		},
+
+		"fail": {
+			"title": "**Whitelist Failure!**\n\n",
+			"message": "\n<@{user_id}> has failed the **whitelist**!\n\n> **Score**: `{correct_answers}`/`{questions_amount}`\n> **ID**: {user_id}\n\n> **Date**: <t:{date_unix}:R>"
+		}
+	},
+
+	"backstory": {
+		"main": {
+			"title": "**Character Background**",
+			"message": "\n**__Write__** a short **background** for your roleplay **character**.\n\n> Minimum: **__{min_characters}__** characters\n\n> Maximum: **__{max_characters}__** characters\n"
+		},
+
+		"time_expired": {
+			"title": "**Character Background**",
+			"message": "Time expired to insert the Backstory"
+		}
+	},
+
+	"whitelist_question": {
+		"title": "**Question**: {question_number}\n",
+		"time_expired": "> **Didn't answer in time**"
+	},
+
+	"already_whitelisted": {
+		"title": "**What are you doing?** \n\n",
+		"message": "\nYou've already passed the **Automatic Whitelist**!\n\n> Your **score** was: `{correct_answers}`/`{questions_amount}`\n"
+	},
+
+	"first_dm": {
+		"main": {
+			"title": "**Automatic Whitelist**",
+			"message": "\n```What do I have to do?```\n> Read the **__questions__** you are asked and **__react__** with the emoji\n> corresponding to the answer you belive is **correct**.\n\n```How do I start?```\n> All you have to do is **react** with {start_whitelist_emoji}\n\n```Is there a time limit?```\n> For **each** question you will have **{response_time}**, if you do\n> not **manage** to answer, the question will not **count**.\n\n```What happens if I do not pass the Automatic Whitelist?```\n> You will be assigned a **__cooldown__**, and only after it **expires**, you can try again.\n\n```How do I know if I have passed the Automatic Whitelist?```\n> At the **end** of you will be shown your **__result__**.\n"
+		},
+
+		"time_expired": {
+			"title": "**Automatic Whitelist**",
+			"message": "Time expired to **start** the test."
+		}
+	},
+
+	"commands": {
+		"check": {
+			"whitelisted": "> <@{user_id}> is currently __whitelisted__.\n\n> **Correct answers**: `{correct_answers}`\n> **Execution Time**: `{execution_time}` Mins\n> **Passed on date**: <t:{passed_date}:R>\n\n> **Check performed by:** <@{sender_id}>",
+			"not_whitelisted": "> <@{user_id}> is not **whitelisted** at the moment\n\n**Check performed by:** <@{sender_id}>",
+			"cooldown_expired": "> The cooldown of <@{user_id}> has expired.\n> They can start the whitelist test again.",
+			"cooldown": "> <@{user_id}> is currently on __cooldown__\n\n> It expires: <t:{expire_date}:R>"
+		},
+
+		"createmessage": {
+			"title": "**Automatic Whitelist**",
+			"message": "\n```What do I have to do?```\n> You will be contacted in **__private__**\n\n> Make sure you have **private messages enabled** in your Discord settings\n\n> Do not spam reactions/messages\n\n> React with {start_whitelist_emoji} to start the whitelist\n",
+			"success": "Starting message created successfully"
+		},
+
+		"removecooldown": {
+			"title": "**Remove Cooldown**",
+			"no_cooldown": "> <@{user_id}> is not on **cooldown**.",
+			"success": "> Cooldown **__removed__** from <@{user_id}>!\n> Reason: {reason}\n\n> Performed by <@{sender_id}>"
+		},
+
+		"removewhitelist": {
+			"success": "> **Whitelist** has been **__removed__** from <@{user_id}>!\n> Reason: {reason}\n\n> Performed by <@{sender_id}>",
+			"no_whitelist": "> <@{user_id}> is not **whitelisted**."
+		},
+
+		"resetdatabase": {
+			"title": "**Reset Database**",
+			"success": "> Database has been reset and all roles have been removed!",
+			"resetting": "> At the moment a whitelist reset has been going on\n> Please try again later."
+		}
+	},
+
+	"cooldown_handler": {
+		"cooldown": {
+			"message": "**You are on cooldown**\n\n> Your cooldown expires <t:{expiring_date}:R>\n"
+		}
+	}
+}
