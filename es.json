@@ -1,0 +1,121 @@
+{
+	"language_name": "Español",
+	"fail_color": [255, 0, 0],
+	"success_color": [0, 255, 0],
+	"neutral_color": [59, 136, 195],
+	"no_dm": "> Este comando no puede ser **ejecutado** en **__MD__**!",
+	"no_permission": "> No tienes **__permiso__** para ejecutar este **comando**!",
+
+	"whitelist_success_dm": {
+		"whitelist_report": {
+			"title": "**¡Has pasado!**\n\n",
+			"message": "\n> ¡Nos complace informarte que has sido **aceptado**!\n\n> **Tu puntuación**: `{correct_answers}`/`{questions_amount}`\n"
+		},
+
+		"final_message": {
+			"title": "**¡Terminaste!**\n\n",
+			"message": "¡Felicidades, has pasado la **whitelist**!\n\n> Se te ha otorgado el **rol** en **Discord** y ahora puedes **unirte** al **servidor**!"
+		}
+	},
+
+	"whitelist_failure_dm": {
+		"title": "**Has fallado**\n\n",
+		"message": "\n> ¡Lo siento! ¡Te informamos que has sido **rechazado**!\n> **Tu puntuación**: `{correct_answers}`/`{questions_amount}`\n\n> ¡No te rindas! Estudia las **__regulaciones__** e inténtalo de nuevo."
+	},
+
+	"log_channel_message": {
+		"success": {
+			"title": "**¡Nuevo jugador!**\n\n",
+			"message": "\n<@{user_id}> ha sido **agregado a la whitelist**!\n\n> **Puntuación**: `{correct_answers}`/`{questions_amount}`\n> **ID**: {user_id}\n\n> **Fecha**: <t:{date_unix}:R>\n\n> **Historia**: {backstory}"
+		},
+
+		"fail": {
+			"title": "**Falló en la whitelist!**\n\n",
+			"message": "\n<@{user_id}> ha fallado la **whitelist**!\n\n> **Puntuación**: {correct_answers}/{questions_amount}\n> **ID**: {user_id}\n\n> **Fecha**: <t:{date_unix}:R>"
+		}
+	},
+
+	"admin_log_channel_message": {
+		"success": {
+			"title": "**¡Nuevo jugador!**\n\n",
+			"message": "\n<@{user_id}> ha sido **agregado a la whitelist**!\n\n> **Puntuación**: `{correct_answers}`/`{questions_amount}`\n> **ID**: {user_id}\n\n> **Fecha**: <t:{date_unix}:R>\n\n> **Historia**: {backstory}"
+		},
+
+		"fail": {
+			"title": "**Falló en la whitelist!**\n\n",
+			"message": "\n<@{user_id}> ha fallado la **whitelist**!\n\n> **Puntuación**: `{correct_answers}`/`{questions_amount}`\n> **ID**: {user_id}\n\n> **Fecha**: <t:{date_unix}:R>"
+		}
+	},
+
+	"backstory": {
+		"main": {
+			"title": "**Historia del personaje**",
+			"message": "\n**__Escribe__** una breve **historia** para tu personaje de **roleplay**.\n\n> Mínimo: **__{min_characters}__** caracteres\n\n> Máximo: **__{max_characters}__** caracteres\n"
+		},
+
+		"time_expired": {
+			"title": "**Historia del personaje**",
+			"message": "El tiempo para insertar la historia ha expirado"
+		}
+	},
+
+	"whitelist_question": {
+		"title": "**Pregunta**: {question_number}\n",
+		"time_expired": "> **No respondiste a tiempo**"
+	},
+
+	"already_whitelisted": {
+		"title": "**¿Qué estás haciendo?** \n\n",
+		"message": "\n¡Ya has pasado la **Whitelist Automática**!\n\n> Tu **puntuación** fue: `{correct_answers}`/`{questions_amount}`\n"
+	},
+
+	"first_dm": {
+		"main": {
+			"title": "**Whitelist Automática**",
+			"message": "\n```¿Qué tengo que hacer?```\n> Lee las **__preguntas__** que se te hacen y **__reacciona__** con el emoji\n> correspondiente a la respuesta que crees que es **correcta**.\n\n```¿Cómo empiezo?```\n> Todo lo que tienes que hacer es **reaccionar** con {start_whitelist_emoji}\n\n```¿Hay un límite de tiempo?```\n> Para **cada** pregunta tendrás **{response_time}**, si no\n> logras **responder**, la pregunta no **contará**.\n\n```¿Qué pasa si no paso la Whitelist Automática?```\n> Se te asignará un **__enfriamiento__**, y solo después de que **expire**, puedes intentarlo de nuevo.\n\n```¿Cómo sé si he pasado la Whitelist Automática?```\n> Al **final** se te mostrará tu **__resultado__**.\n"
+		},
+
+		"time_expired": {
+			"title": "**Whitelist Automática**",
+			"message": "El tiempo expiró para **empezar** la prueba."
+		}
+	},
+
+	"commands": {
+		"check": {
+			"whitelisted": "> <@{user_id}> está actualmente en __whitelist__.\n\n> **Respuestas correctas**: `{correct_answers}`\n> **Tiempo de ejecución**: `{execution_time}` minutos\n> **Pasado en fecha**: <t:{passed_date}:R>\n\n> **Comprobado por:** <@{sender_id}>",
+			"not_whitelisted": "> <@{user_id}> no está en **whitelist** en este momento.\n\n**Comprobado por:** <@{sender_id}>",
+			"cooldown_expired": "> El enfriamiento de <@{user_id}> ha expirado.\n> Pueden comenzar la prueba de la whitelist de nuevo.",
+			"cooldown": "> <@{user_id}> está actualmente en __enfriamiento__\n\n> Expira: <t:{expire_date}:R>"
+		},
+
+		"createmessage": {
+			"title": "**Whitelist Automática**",
+			"message": "\n```¿Qué debo hacer?```\n> Se le contactará en **__privado__**\n\n> Asegúrese de tener habilitados los **mensajes privados** en su configuración de Discord\n\n> No envíe spam de reacciones/mensajes\n\n> Reaccione con {start_whitelist_emoji} para comenzar la whitelist\n",
+			"success": "Mensaje de inicio creado exitosamente"
+		},
+
+		"removecooldown": {
+			"title": "**Eliminar tiempo de espera**",
+			"no_cooldown": "> <@{user_id}> no está en **tiempo de espera**.",
+			"success": "> ¡Se ha **__eliminado__** el tiempo de espera para <@{user_id}>!\n> Razón: {reason}\n\n> Realizado por <@{sender_id}>"
+		},
+
+		"removewhitelist": {
+			"success": "> Se ha **__eliminado__** la **whitelist** de <@{user_id}>!\n> Razón: {reason}\n\n> Realizado por <@{sender_id}>",
+			"no_whitelist": "> <@{user_id}> no está en la **whitelist**."
+		},
+
+		"resetdatabase": {
+			"title": "**Restablecer la base de datos**",
+			"success": "> ¡La base de datos se ha restablecido y todos los roles han sido eliminados!",
+			"resetting": "> Actualmente se está llevando a cabo un restablecimiento de la whitelist.\n> Por favor, inténtelo de nuevo más tarde."
+		},
+
+		"cooldown_handler": {
+			"cooldown": {
+				"message": "**Está en tiempo de espera**\n\n> Su tiempo de espera expira el <t:{expiring_date}:R>\n"
+			}
+		}
+	}
+}
